@@ -24,9 +24,9 @@ final class AppRouter: ObservableObject, AppRouterProtocol {
     func getScreenFrom(destination: AppRoute) -> any View {
         switch destination {
         case .home:
-            DIContainer.makeHomeScreen()
+            DIFactoryContainer.makeHomeScreen()
         case .detail(playerId: let id):
-            DIContainer.makeDetailScreen(playerId: id)
+            DIFactoryContainer.makeDetailScreen(playerId: id)
         }
     }
 }

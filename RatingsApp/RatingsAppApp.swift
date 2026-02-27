@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct RatingsAppApp: App {
-    @StateObject private var router = DIContainer.Router
+    @StateObject private var router = DIFactoryContainer.Router
     
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $router.path) {
-                DIContainer.makeHomeScreen()
+                DIFactoryContainer.makeHomeScreen()
                     .navigationDestination(for: AppRoute.self) { destination in
                         AnyView(router.getScreenFrom(destination: destination))
                     }

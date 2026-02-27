@@ -10,7 +10,7 @@ import SwiftData
 import SwiftUI
 
 @MainActor
-final class DIContainer {
+final class DIFactoryContainer {
     // MARK: - SwiftData Container init
     static private var sharedModelContainer: ModelContainer = {
         let schema = Schema([
@@ -22,7 +22,7 @@ final class DIContainer {
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
-            fatalError("No se pudo crear el ModelContainer de SwiftData: \(error)")
+            fatalError("SwiftData of ModelContainer could not be loaded: \(error)")
         }
     }()
     
