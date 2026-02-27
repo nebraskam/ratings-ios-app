@@ -5,7 +5,7 @@
 ## 📱 Instrucciones para ejecutar la app 
 
 Compilar y ejecutar el proyecto desde xcode.
-_Version Xcode_: 26.1 _Version Simulador_: iOS 26.1
+_Version Xcode_: 26.1 _Minimum deployments_: iOS 18.6
 
 ## 🏗️ Arquitectura y Patrones de Diseño
 
