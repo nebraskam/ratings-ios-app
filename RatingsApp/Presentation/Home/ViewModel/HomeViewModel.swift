@@ -122,7 +122,7 @@ extension HomeViewModel {
     struct LocalizedStrings {
         struct Header {
             let title = "FC26"
-            let prompt = "Search for a player by name or team."
+            let prompt = "Search for a player by name."
         }
         
         struct Loader {
@@ -131,7 +131,7 @@ extension HomeViewModel {
         
         struct Empty {
             let title = "No players found."
-            let description = "Try searching for a player by name or team."
+            let description = "Try searching for a player by name."
         }
         
         struct Error {
