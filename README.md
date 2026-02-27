@@ -2,6 +2,11 @@
 
 # EAFC Ratings
 
+## 📱 Instrucciones para ejecutar la app 
+
+Compilar y ejecutar el proyecto desde xcode.
+_Version Xcode_: 26.1 _Version Simulador_: iOS 26.1
+
 ## 🏗️ Arquitectura y Patrones de Diseño
 
 Se ha implementado una arquitectura **Clean Architecture** combinada con **MVVM** y el patrón **Coordinator (Router)**, garantizando un desacoplamiento total entre las capas de datos, lógica de negocio y presentación.
