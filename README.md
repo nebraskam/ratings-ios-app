@@ -78,3 +78,9 @@ Suite de pruebas completa utilizando el nuevo framework **Swift Testing**.
 **Componentización de UI**: permite extraer elementos visuales recurrentes hacia piezas atómicas y configurables
 
 **Implementación de una Base Screen genérica (o un StateContainer)**: crear una vista contenedor que orqueste los estados de forma global, con el objetivo de no tener que montar vistas comunes como loading / error / empty en todas las pantallas.
+
+
+## DEMO 
+
+![Simulator Screen Recording - iPhone 17 Pro - 2026-02-27 at 14 34 58](https://github.com/user-attachments/assets/2bdc183a-fdb3-4c69-9763-eca05a0c888b)
+
