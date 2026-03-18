@@ -32,7 +32,7 @@ actor PlayersLocalDataSource: PlayersLocalDataSourceProtocol {
     func clear() async {
         let ctx = context
         do {
-            // SwiftData permite borrar todos los registros de un modelo de forma eficiente
+            // SwiftData allows for efficient deletion of all records for a specific model type
             try ctx.delete(model: PlayerEntity.self)
             try ctx.save()
         } catch {

@@ -14,14 +14,14 @@ struct Player: Identifiable, Equatable {
     let commonName: String?
     let overallRating: Int
     
-    // Posición principal del jugador (ej. "DC", "MC", "POR")
+    // Player's primary position (e.g., "ST", "CM", "GK")
     let position: String
     
-    // URLs para las imágenes
+    // Image URLs
     let avatarUrl: String
     let shieldUrl: String?
     
-    // Atributos extendidos (Stats principales del juego)
+    // Extended attributes (Main game stats)
     let pace: Int
     let shooting: Int
     let passing: Int
@@ -29,11 +29,11 @@ struct Player: Identifiable, Equatable {
     let defending: Int
     let physical: Int
     
-    // MARK: - Lógica de Dominio
+    // MARK: - Domain Logic
     
-    /// Calcula el nombre que se debe mostrar en la UI.
-    /// Regla de negocio: Si tiene 'commonName' (ej. "Vini Jr."), se usa ese.
-    /// Si no, se concatena el 'firstName' y 'lastName' (ej. "Mohamed Salah").
+    /// Calculates the name to be displayed in the UI.
+    /// Business rule: If 'commonName' exists (e.g., "Vini Jr."), it is used.
+    /// Otherwise, 'firstName' and 'lastName' are concatenated (e.g., "Mohamed Salah").
     var displayName: String {
         if let commonName = commonName, !commonName.isEmpty {
             return commonName
